@@ -230,6 +230,13 @@ struct ContentView: View {
         }
         let playerItem = AVPlayerItem(url: url)
         soundPlayer.replaceCurrentItem(with: playerItem)
-        soundPlayer.play()
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            soundPlayer.play()
+        } catch {
+            print("Failed to play sound: \(error.localizedDescription)")
+        }
     }
 }
