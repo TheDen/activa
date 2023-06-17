@@ -28,7 +28,7 @@ struct ContentView: View {
     
     var body: some View {
         
-        let intervals = Array(0...30)
+        let intervals = Array(1...30)
         NavigationView {
                 Form {
                     VStack {
