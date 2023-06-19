@@ -37,8 +37,7 @@ struct ContentView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(maxWidth: .infinity, maxHeight: 50)
                             .padding(.top, 0)
-                            .padding(.bottom, 0)
-                        
+                            .padding(.bottom, 10)
                         Text("Interval One")
                             .font(.title)
                             .fontWeight(.thin)
@@ -57,7 +56,7 @@ struct ContentView: View {
                             }
                         }
                         .pickerStyle(WheelPickerStyle())
-                        .frame(height: 100) // Adjust the height as desired
+                        .frame(height: 90) // Adjust the height as desired
                         .padding(.bottom, 10)
                         .padding(.top, 0)
                         .fontWeight(.thin)
@@ -79,7 +78,7 @@ struct ContentView: View {
                                 }                                     }
                         }
                         .pickerStyle(WheelPickerStyle())
-                        .frame(height: 100) // Adjust the height as desired
+                        .frame(height: 90) // Adjust the height as desired
                         .fontWeight(.thin)
                         .padding(.bottom, 10)
                         .padding(.top, 0)
