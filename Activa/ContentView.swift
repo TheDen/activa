@@ -59,7 +59,7 @@ struct ContentView: View {
                         .frame(height: 90) // Adjust the height as desired
                         .padding(.bottom, 10)
                         .padding(.top, 0)
-                        .fontWeight(.thin)
+                        .font(.system(size: 14, weight: .thin))
                         .padding(0)
                         Text("Interval Two")
                             .font(.title)
@@ -79,7 +79,7 @@ struct ContentView: View {
                         }
                         .pickerStyle(WheelPickerStyle())
                         .frame(height: 90) // Adjust the height as desired
-                        .fontWeight(.thin)
+                        .font(.system(size: 14, weight: .thin))
                         .padding(.bottom, 10)
                         .padding(.top, 0)
 
@@ -88,7 +88,7 @@ struct ContentView: View {
                             .frame(maxWidth: .infinity, alignment: .center)
                             .padding(.bottom, 10)
                             .padding(.top, 0)
-                            .fontWeight(.thin)
+                            .font(.system(size: 14, weight: .thin))
                             .toggleStyle(SwitchToggleStyle(tint: .blue))
                         
                         Button(action: {
@@ -106,7 +106,7 @@ struct ContentView: View {
      
                             }
                             .font(.title2)
-                            .fontWeight(.thin)
+                            .font(.system(size: 14, weight: .thin))
                             .padding()
                             .foregroundColor(.blue)
                             .background(
@@ -128,13 +128,13 @@ struct ContentView: View {
                                     .frame(maxWidth: .infinity, alignment: .center)
                                     .padding(.bottom, 5)
                                     .foregroundColor(timerColor)
-                                    .fontWeight(.regular)
+                                    .font(.system(size: 14, weight: .regular))
 
                                 //.disabled(Hide)
                                 Text("\(remainingTime) seconds")
                                     .font(.body)
                                     .frame(maxWidth: .infinity, alignment: .center)
-                                    .fontWeight(.regular)
+                                    .font(.system(size: 14, weight: .regular))
 
                             } .padding(.top, 10)
                             .padding(.bottom, 10)
